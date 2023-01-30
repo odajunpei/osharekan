@@ -1,0 +1,72 @@
+.fv{
+  width: 100%;
+  position: relative;
+  .fv-area{
+    background-color: rgba(255,255,255, 0.7);
+    position: relative;
+    img{
+      width: 100%;
+      z-index: -10;
+      min-height: 700px;
+      object-fit: cover;
+    }
+    .fv-contents{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin:auto;
+      width: 50%;
+      height: 3.2rem;
+      min-width: 600px;
+      @include mediaS{
+        min-width: initial;
+        width: 80%;
+      }
+      h2{
+        text-align: center;
+        font-size: 36px;
+      }
+      .fv-btn{
+        margin-top: 100px;
+        display: flex;
+        justify-content:space-between;
+        @include mediaS{
+          display: block;
+        }
+        .btn-introduction{
+          text-align: center;
+          margin-bottom: 15px;
+          font-size: 1.25rem;
+          @include mediaS{
+            margin-bottom: 5px;
+            margin-top: 15px;
+          }
+        }
+        .tel-btn{
+          background-color: rgba(59,69,75, 0.9);
+          display: block;
+          @include mediaS{
+            width: 300px;
+            margin: 0 auto;
+          }
+        }
+        .line-btn{
+          background-color: rgba(92,184,92, 0.9);
+          display: block;
+          @include mediaS{
+            width: 300px;
+            margin: 0 auto;
+          }
+        }
+        .btn-text{
+          text-align: center;
+          padding: 15px 50px;
+          color: #fff;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
