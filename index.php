@@ -120,7 +120,7 @@
           <h3 class="card-title">
             タイトルが入ります。
           </h3>
-          <p class="<?php echo get_template_directory_uri(); ?>/card-introduction">
+          <p class="card-introduction">
             説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。
           </p>
         </div>
@@ -250,13 +250,13 @@
     </div>
   </section>
   <footer class="footer" id="footer">
-    <small class="footer__small">©おしゃれ館</small>
+    <small class="footer__small">Copyright© おしゃれ館 All rights Reserved.</small>
   </footer>
   <!--JavaScript-->
   <!--jQuery読み込み-->
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/toggle.js"></script>
-  <script src="assets/js/scroll-fadein.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.4.1.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/toggle.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/scroll-fadein.js"></script>
 </body>
 
 </html>

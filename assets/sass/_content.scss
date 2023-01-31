@@ -46,6 +46,7 @@
         }
         .card-introduction{
           margin-top: 10px;
+          font-family: $noto-serif;
           font-size: 1rem;
         }
       }
@@ -86,10 +87,16 @@
         .menus{
           display: flex;
           align-items: center;
-          width: 40%;
-          justify-content: space-between;
+          width: 30%;
+          min-width: 320px;
+          justify-content: space-around;
+          @include mediaS{
+            min-width: inherit;
+            width: 45%;
+          }
           .menu-text{
             font-size: 1.25rem;
+            font-family: $noto-serif;
             @include mediaS{
               font-size: 0.875rem;
             }
@@ -102,6 +109,7 @@
           }
           .price{
             font-size: 1.25rem;
+            font-family: $noto-serif;
             @include mediaS{
               font-size: 0.875rem;
             }
@@ -169,6 +177,7 @@
       //   margin-top: 15px;
       // }
       .title{
+        font-family: $noto-serif;
         text-align: right;
         font-size: 1.25rem;
         min-width: 120px;
@@ -178,6 +187,7 @@
         }
       }
       .intro{
+        font-family: $noto-serif;
         text-align: left;
         font-size: 1.25rem;
       }
