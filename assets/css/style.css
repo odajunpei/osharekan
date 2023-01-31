@@ -18,7 +18,7 @@ html.wf-active {
 body {
   font-family: "Noto Sans JP", sans-serif, apple-system, blinkMacSystemFont, "Helvetica Neue", "Segoe UI", YuGothicM, YuGothic, Meiryo, "Yu Gothic Medium", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.5;
-  color: #181818;
+  color: #3b454b;
   font-weight: 400;
   letter-spacing: 1.3px;
 }
@@ -618,8 +618,11 @@ header .header-label .slide-menu li {
   color: #fff;
   font-size: 1.25rem;
 }
+header .header-label .slide-menu li a {
+  color: #fff;
+}
 header .header-label .header-area h1 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #fff;
 }
 
@@ -810,7 +813,7 @@ footer small {
 .content5 .content-title {
   font-size: 36px;
   text-align: center;
-  margin-top: 150px;
+  padding-top: 150px;
   margin-bottom: 90px;
 }
 .content1 .news-cards,
@@ -911,6 +914,96 @@ footer small {
   z-index: -100;
   height: 600px;
 }
+.content1 .menu .menu-content,
+.content2 .menu .menu-content,
+.content3 .menu .menu-content,
+.content4 .menu .menu-content,
+.content5 .menu .menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.content1 .menu .menu-content .menu-area,
+.content2 .menu .menu-content .menu-area,
+.content3 .menu .menu-content .menu-area,
+.content4 .menu .menu-content .menu-area,
+.content5 .menu .menu-content .menu-area {
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .content1 .menu .menu-content .menu-area,
+.content2 .menu .menu-content .menu-area,
+.content3 .menu .menu-content .menu-area,
+.content4 .menu .menu-content .menu-area,
+.content5 .menu .menu-content .menu-area {
+    padding: 15px;
+  }
+}
+.content1 .menu .menu-content .menu-area .menus,
+.content2 .menu .menu-content .menu-area .menus,
+.content3 .menu .menu-content .menu-area .menus,
+.content4 .menu .menu-content .menu-area .menus,
+.content5 .menu .menu-content .menu-area .menus {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+.content1 .menu .menu-content .menu-area .menus .menu-text,
+.content2 .menu .menu-content .menu-area .menus .menu-text,
+.content3 .menu .menu-content .menu-area .menus .menu-text,
+.content4 .menu .menu-content .menu-area .menus .menu-text,
+.content5 .menu .menu-content .menu-area .menus .menu-text {
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .content1 .menu .menu-content .menu-area .menus .menu-text,
+.content2 .menu .menu-content .menu-area .menus .menu-text,
+.content3 .menu .menu-content .menu-area .menus .menu-text,
+.content4 .menu .menu-content .menu-area .menus .menu-text,
+.content5 .menu .menu-content .menu-area .menus .menu-text {
+    font-size: 0.875rem;
+  }
+}
+.content1 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content2 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content3 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content4 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content5 .menu .menu-content .menu-area .menus .menu-text .sp {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .content1 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content2 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content3 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content4 .menu .menu-content .menu-area .menus .menu-text .sp,
+.content5 .menu .menu-content .menu-area .menus .menu-text .sp {
+    display: block;
+  }
+}
+.content1 .menu .menu-content .menu-area .menus .price,
+.content2 .menu .menu-content .menu-area .menus .price,
+.content3 .menu .menu-content .menu-area .menus .price,
+.content4 .menu .menu-content .menu-area .menus .price,
+.content5 .menu .menu-content .menu-area .menus .price {
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .content1 .menu .menu-content .menu-area .menus .price,
+.content2 .menu .menu-content .menu-area .menus .price,
+.content3 .menu .menu-content .menu-area .menus .price,
+.content4 .menu .menu-content .menu-area .menus .price,
+.content5 .menu .menu-content .menu-area .menus .price {
+    font-size: 0.875rem;
+  }
+}
 .content1 .contact-form,
 .content2 .contact-form,
 .content3 .contact-form,
@@ -976,7 +1069,7 @@ footer small {
 .content4 .access-content,
 .content5 .access-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: top;
   width: 80%;
   margin: auto;
@@ -989,46 +1082,61 @@ footer small {
 .content4 .access-content,
 .content5 .access-content {
     display: block;
+    width: 100%;
   }
 }
-.content1 table,
-.content2 table,
-.content3 table,
-.content4 table,
-.content5 table {
-  width: 40%;
+.content1 .company-introduction,
+.content2 .company-introduction,
+.content3 .company-introduction,
+.content4 .company-introduction,
+.content5 .company-introduction {
+  width: 50%;
   margin-right: 5%;
 }
 @media screen and (max-width: 768px) {
-  .content1 table,
-.content2 table,
-.content3 table,
-.content4 table,
-.content5 table {
-    width: 100%;
-    margin-right: 0;
+  .content1 .company-introduction,
+.content2 .company-introduction,
+.content3 .company-introduction,
+.content4 .company-introduction,
+.content5 .company-introduction {
+    width: 96%;
+    margin: auto;
   }
 }
-.content1 table tr,
-.content2 table tr,
-.content3 table tr,
-.content4 table tr,
-.content5 table tr {
-  align-items: top;
+.content1 .company-introduction .company-inform,
+.content2 .company-introduction .company-inform,
+.content3 .company-introduction .company-inform,
+.content4 .company-introduction .company-inform,
+.content5 .company-introduction .company-inform {
+  vertical-align: top;
+  display: flex;
+  margin-top: 20px;
 }
-.content1 table tr th,
-.content2 table tr th,
-.content3 table tr th,
-.content4 table tr th,
-.content5 table tr th {
+.content1 .company-introduction .company-inform .title,
+.content2 .company-introduction .company-inform .title,
+.content3 .company-introduction .company-inform .title,
+.content4 .company-introduction .company-inform .title,
+.content5 .company-introduction .company-inform .title {
+  text-align: right;
   font-size: 1.25rem;
-  min-width: 150px;
+  min-width: 120px;
+  width: 120px;
 }
-.content1 table tr td,
-.content2 table tr td,
-.content3 table tr td,
-.content4 table tr td,
-.content5 table tr td {
+@media screen and (max-width: 992px) {
+  .content1 .company-introduction .company-inform .title,
+.content2 .company-introduction .company-inform .title,
+.content3 .company-introduction .company-inform .title,
+.content4 .company-introduction .company-inform .title,
+.content5 .company-introduction .company-inform .title {
+    text-align: left;
+  }
+}
+.content1 .company-introduction .company-inform .intro,
+.content2 .company-introduction .company-inform .intro,
+.content3 .company-introduction .company-inform .intro,
+.content4 .company-introduction .company-inform .intro,
+.content5 .company-introduction .company-inform .intro {
+  text-align: left;
   font-size: 1.25rem;
 }
 .content1 iframe,
@@ -1036,7 +1144,6 @@ footer small {
 .content3 iframe,
 .content4 iframe,
 .content5 iframe {
-  width: 40%;
   height: auto;
   margin-left: 5%;
 }
@@ -1049,6 +1156,36 @@ footer small {
     margin-top: 20px;
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content5 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content5 table {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
+}
+.content5 iframe {
+  width: 450px;
+  height: 450px;
+}
+@media screen and (max-width: 768px) {
+  .content5 iframe {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    min-width: 400px;
+    min-height: 400px;
+    margin-top: 50px;
   }
 }
 

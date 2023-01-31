@@ -15,7 +15,7 @@
   .content-title{
     font-size: 36px;
     text-align: center;
-    margin-top: 150px;
+    padding-top: 150px;
     margin-bottom: 90px;
   }
   .news-cards{
@@ -67,6 +67,48 @@
       z-index: -100;
       height: 600px;
     }
+    .menu-content{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      .menu-area{
+        display: flex;
+        width: 100%;
+        padding: 25px;
+        justify-content: space-between;
+        align-items: center;
+        @include mediaXS{
+          padding: 15px;
+        }
+        .menus{
+          display: flex;
+          align-items: center;
+          width: 40%;
+          justify-content: space-between;
+          .menu-text{
+            font-size: 1.25rem;
+            @include mediaS{
+              font-size: 0.875rem;
+            }
+            .sp{
+              display: none;
+              @include mediaXS{
+                display: block;
+              }
+            }
+          }
+          .price{
+            font-size: 1.25rem;
+            @include mediaS{
+              font-size: 0.875rem;
+            }
+          }
+        }
+      }
+    }
   }
   .contact-form{
     display: block;
@@ -99,41 +141,82 @@
   }
   .access-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: top;
     width: 80%;
     margin: auto;
     margin-top: 50px;
     @include mediaS{
       display: block;
+      width: 100%;
     }
   }
-  table{
-    width: 40%;
+  .company-introduction{
+    width: 50%;
     margin-right: 5%;
     @include mediaS{
-      width: 100%;
-      margin-right: 0;
+      width: 96%;
+      margin: auto;
     }
-    tr{
-      align-items: top;
-      th{
+    .company-inform{
+      vertical-align: top;
+      display: flex;
+      margin-top: 20px;
+      // @include mediaM{
+      //   display: block;
+      //   text-align: center;
+      //   margin: auto;
+      //   margin-top: 15px;
+      // }
+      .title{
+        text-align: right;
         font-size: 1.25rem;
-        min-width: 150px;
+        min-width: 120px;
+        width: 120px;
+        @include mediaM{
+          text-align: left;
+        }
       }
-      td{
+      .intro{
+        text-align: left;
         font-size: 1.25rem;
       }
     }
   }
   iframe{
-    width: 40%;
     height: auto;
     margin-left: 5%;
     @include mediaS{
       margin-top: 20px;
       width: 100%;
       margin-left: 0;
+    }
+  }
+}
+.content5{
+  @include mediaS{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  table{
+    @include mediaS{
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 96%;
+    }
+  }
+  iframe{
+    width: 450px;
+    height: 450px;
+    @include mediaS{
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      height: auto;
+      min-width: 400px;
+      min-height: 400px;
+      margin-top: 50px;
     }
   }
 }
