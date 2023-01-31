@@ -6,3 +6,6 @@ document.querySelector('.slide-menu').addEventListener('click', function(){
   this.classList.remove('active');
   document.querySelector('.slide-menu').classList.remove('active');
 })
+document.querySelector('.slide-menu').addEventListener('click', function(){
+  document.querySelector('.hamburger').classList.remove('active');
+})

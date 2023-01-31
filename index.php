@@ -42,7 +42,7 @@
     <header>
       <div class="header-label">
         <div class="header-area">
-          <h1>おしゃれ館</h1>
+          <h1><a href="<?php echo get_template_directory_uri(); ?>#home">おしゃれ館</a></h1>
           <div class="hamburger">
             <!-- ハンバーガーメニューの線 -->
             <span></span>

@@ -625,6 +625,9 @@ header .header-label .header-area h1 {
   font-size: 1.25rem;
   color: #fff;
 }
+header .header-label .header-area h1 a {
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
   header .header-area {
@@ -781,9 +784,10 @@ footer {
 }
 footer small {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   margin-top: 200px;
   display: block;
+  padding: 5px 0;
 }
 
 .content1,
@@ -982,7 +986,7 @@ footer small {
 .content3 .menu .menu-content .menu-area .menus .menu-text,
 .content4 .menu .menu-content .menu-area .menus .menu-text,
 .content5 .menu .menu-content .menu-area .menus .menu-text {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .content1 .menu .menu-content .menu-area .menus .menu-text .sp,
@@ -1015,7 +1019,7 @@ footer small {
 .content3 .menu .menu-content .menu-area .menus .price,
 .content4 .menu .menu-content .menu-area .menus .price,
 .content5 .menu .menu-content .menu-area .menus .price {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .content1 .contact-form,
@@ -1146,6 +1150,15 @@ footer small {
     text-align: left;
   }
 }
+@media screen and (max-width: 768px) {
+  .content1 .company-introduction .company-inform .title,
+.content2 .company-introduction .company-inform .title,
+.content3 .company-introduction .company-inform .title,
+.content4 .company-introduction .company-inform .title,
+.content5 .company-introduction .company-inform .title {
+    font-size: 1rem;
+  }
+}
 .content1 .company-introduction .company-inform .intro,
 .content2 .company-introduction .company-inform .intro,
 .content3 .company-introduction .company-inform .intro,
@@ -1154,6 +1167,15 @@ footer small {
   font-family: "Noto Serif JP", sans-serif;
   text-align: left;
   font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .content1 .company-introduction .company-inform .intro,
+.content2 .company-introduction .company-inform .intro,
+.content3 .company-introduction .company-inform .intro,
+.content4 .company-introduction .company-inform .intro,
+.content5 .company-introduction .company-inform .intro {
+    font-size: 1rem;
+  }
 }
 .content1 iframe,
 .content2 iframe,

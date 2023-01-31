@@ -98,7 +98,7 @@
             font-size: 1.25rem;
             font-family: $noto-serif;
             @include mediaS{
-              font-size: 0.875rem;
+              font-size: 1rem;
             }
             .sp{
               display: none;
@@ -111,7 +111,7 @@
             font-size: 1.25rem;
             font-family: $noto-serif;
             @include mediaS{
-              font-size: 0.875rem;
+              font-size: 1rem;
             }
           }
         }
@@ -185,11 +185,17 @@
         @include mediaM{
           text-align: left;
         }
+        @include mediaS{
+          font-size: 1rem;
+        }
       }
       .intro{
         font-family: $noto-serif;
         text-align: left;
         font-size: 1.25rem;
+        @include mediaS{
+          font-size: 1rem;
+        }
       }
     }
   }
